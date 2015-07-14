@@ -5,6 +5,7 @@ module.exports = function(config) {
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js',
       // For ngMockE2E
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-mocks.js',
+      'https://d1l4stvdmqmdzl.cloudfront.net/4.0.7/mongoose.min.js',
       './app.js',
       './test/*.js',
       { pattern: './*.html', included: false, served: true }

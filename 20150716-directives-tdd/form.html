@@ -1,0 +1,25 @@
+<div>
+  <div>Email</div>
+  <div class="email-input">
+    <input type="text" ng-model="doc.email">
+    <div  class="alert-error"
+          ng-if="state.validation['email'].kind === 'required'">
+      Please enter an email address!
+    </div>
+    <div  class="alert-error"
+          ng-if="state.validation['email'].kind === 'regexp'">
+      Your email must look like "a@b.co"
+    </div>
+  </div>
+  <div class="submit">
+    <button ng-click="submit()">Submit</button>
+    <div  class="success"
+          ng-if="state.success">
+      Submitted successfully!
+    </div>
+    <div  class="alert-error"
+          ng-if="state.http">
+      HTTP error: {{state.http}}
+    </div>
+  </div>
+</div>

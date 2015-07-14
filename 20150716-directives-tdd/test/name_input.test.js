@@ -1,6 +1,7 @@
 describe('nameInput', function() {
   var element;
   var injector;
+  var scope;
 
   beforeEach(function(done) {
     injector = angular.injector(['example', 'ngMockE2E']);
