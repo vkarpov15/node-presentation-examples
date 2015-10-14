@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "4.13.3",
+    "prerender": "3.22.1",
+    "prerender-node": "2.1.0"
+  },
+  "scripts": {
+    "prerender": "env PORT=8172 prerender",
+    "start": "node server.js"
+  }
+}
