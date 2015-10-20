@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "express": "4.13.3",
+    "karma": "0.12.16",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "0.1.4",
+    "karma-mocha": "0.1.4",
     "prerender": "3.22.1",
     "prerender-node": "2.1.0"
   },

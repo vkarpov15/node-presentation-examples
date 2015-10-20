@@ -1,4 +1,4 @@
-var m = angular.module('test', []);
+var m = angular.module('test', ['ng']);
 
 m.directive('toggleVisibilityA', function() {
   return {
@@ -19,7 +19,7 @@ m.directive('toggleVisibilityA', function() {
 m.directive('toggleVisibilityOn', function() {
   return function(scope, element, attrs) {
     scope.$on(attrs.toggleVisibilityOn, function() {
-      element.toggleClass('hidden');
+      element.toggle();
     });
   }
 });
